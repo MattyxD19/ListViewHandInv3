@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="ListViewHandIn.View.ListViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ListViewHandIn.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="350">
+    <Grid>
+        <StackPanel>
+            <ItemsControl ItemsSource="{Binding Path=FileList}" >
+                <ListView x:Name="ShowList" Height="350" Width="350">
+                    <DataTemplate >
+                        <TextBlock Text="{Binding Path=FileName}"></TextBlock>
+                    </DataTemplate>
+                </ListView>
+            </ItemsControl>
+        </StackPanel>
+    </Grid>
+</UserControl>
