@@ -16,6 +16,7 @@ namespace ListViewHandIn.View
             foreach (var item in FileView.convertListToString())
             {
                 ShowList.Items.Add(item);
+                Console.WriteLine(item);
             }
         }
     }
