@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -56,6 +57,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\FileClass.cs" />
+    <Compile Include="Model\ShowImages.cs" />
+    <Compile Include="Model\ShowText.cs" />
     <Compile Include="ViewModel\FileView.cs" />
     <Compile Include="View\ListBoxImages.xaml.cs">
       <DependentUpon>ListBoxImages.xaml</DependentUpon>

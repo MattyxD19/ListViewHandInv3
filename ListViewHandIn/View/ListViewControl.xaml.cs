@@ -1,5 +1,7 @@
-﻿using ListViewHandIn.ViewModel;
+﻿using ListViewHandIn.Model;
+using ListViewHandIn.ViewModel;
 using System;
+using System.Collections.Generic;
 using System.Windows.Controls;
 
 namespace ListViewHandIn.View
@@ -8,7 +10,8 @@ namespace ListViewHandIn.View
     /// Interaction logic for ListViewControl.xaml
     /// </summary>
     public partial class ListViewControl : UserControl
-    {
+    {  
+        /*
         public ListViewControl()
         {
             InitializeComponent();
@@ -19,5 +22,8 @@ namespace ListViewHandIn.View
                 Console.WriteLine(item);
             }
         }
+
+        internal List<ShowText> ItemsSource { get; set; }
+        */
     }
 }

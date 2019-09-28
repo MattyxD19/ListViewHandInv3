@@ -8,7 +8,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <lib:ListViewControl HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"></lib:ListViewControl>
-        <lib:ListBoxImages HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"></lib:ListBoxImages>
+        <Button Content="Open File" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Width="122" Height="30" Click="Button_Click"/>
+
+        <ListBox x:Name="listbox1" Margin="398,60,64,60">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding MyImage}" Width="280" Height="280"></Image>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <ListBox x:Name="listbox2" Margin="30,60,430,60">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Path= MyText}"></TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
     </Grid>
 </Window>

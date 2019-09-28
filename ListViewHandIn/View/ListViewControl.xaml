@@ -11,7 +11,7 @@
             <ItemsControl ItemsSource="{Binding Path=FileList}" >
                 <ListView x:Name="ShowList" Height="350" Width="350">
                     <DataTemplate >
-                        <TextBlock Text="{Binding Path=FileName}"></TextBlock>
+                        <TextBlock Text="{Binding Path=MyText}"></TextBlock>
                     </DataTemplate>
                 </ListView>
             </ItemsControl>

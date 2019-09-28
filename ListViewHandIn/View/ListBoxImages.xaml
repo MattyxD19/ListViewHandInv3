@@ -13,7 +13,7 @@
             <ListBox x:Name="ShowImages" Height="350" Width="350" HorizontalAlignment="Right" VerticalAlignment="Center">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Image Source="{Binding FileName}"></Image>
+                        <Image Source="{Binding MyImage}"></Image>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>

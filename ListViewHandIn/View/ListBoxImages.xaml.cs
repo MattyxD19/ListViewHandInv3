@@ -1,4 +1,5 @@
-﻿using ListViewHandIn.ViewModel;
+﻿using ListViewHandIn.Model;
+using ListViewHandIn.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,8 @@ namespace ListViewHandIn.View
     /// Interaction logic for ListBoxImages.xaml
     /// </summary>
     public partial class ListBoxImages : UserControl
-    {
+    {   
+        /*
         public ListBoxImages()
         {
             InitializeComponent();
@@ -39,7 +41,10 @@ namespace ListViewHandIn.View
                 }
                 
             }
-            ShowImages.ItemsSource = FileView.LoadList();
+            //ShowImages.ItemsSource = FileView.LoadList();
         }
+
+        internal List<ShowImages> ItemsSource { get; set; }
+        */
     }
 }

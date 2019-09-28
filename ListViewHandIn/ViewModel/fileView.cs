@@ -10,6 +10,7 @@ namespace ListViewHandIn.ViewModel
 {
     class FileView
     {  
+        /*
         public List<FileClass> Files
         {
             get; set;
@@ -48,7 +49,7 @@ namespace ListViewHandIn.ViewModel
 
             return convertedList;
         }
-        
+        */
 
 
     }

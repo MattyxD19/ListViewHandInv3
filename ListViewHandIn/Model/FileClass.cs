@@ -9,6 +9,7 @@ namespace ListViewHandIn.Model
 {
     public class FileClass : IFile
     {
+        /*
         private string fileName;
         public string FileName
         {
@@ -24,7 +25,7 @@ namespace ListViewHandIn.Model
 
         public String[] FolderPath()
         {
-            String path = "C:/Users/Mathias/Desktop/test";
+            String path = "F:/Test";
             //String[] folderDir = new Directory.GetFiles(path).GetFiles().Select(o => o.Name).ToArray();
             //string[] dir = new Directory.GetFiles(path).Select(File => Path.GetFileName(File)).toArray();
 
@@ -36,7 +37,7 @@ namespace ListViewHandIn.Model
 
         public String[] FilePath()
         {
-            String path = "C:/Users/Mathias/Desktop/test";
+            String path = "F:/Test";
             //String[] folderDir = new Directory.GetFiles(path).GetFiles().Select(o => o.Name).ToArray();
             //string[] dir = new Directory.GetFiles(path).Select(File => Path.GetFileName(File)).toArray();
 
@@ -47,5 +48,6 @@ namespace ListViewHandIn.Model
 
 
         }
+        */
     }
 }
