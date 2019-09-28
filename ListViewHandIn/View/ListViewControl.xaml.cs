@@ -13,10 +13,10 @@ namespace ListViewHandIn.View
         {
             InitializeComponent();
             
-            foreach (var item in FileView.convertListToString())
+            foreach (var item in FileView.LoadList())
             {
-                ShowList.Items.Add(item);
-                Console.WriteLine(item);
+                ShowList.Items.Add(item.FileName);
+                Console.WriteLine(item.FileName);
             }
         }
     }

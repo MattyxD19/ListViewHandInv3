@@ -1,24 +1,18 @@
 ﻿using ListViewHandIn.Model;
 using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 
 namespace ListViewHandIn.ViewModel
 {
     class FileView
-    {  
-        public List<FileClass> Files
-        {
-            get; set;
-        }
+    {
 
         public static List<FileClass> LoadList()
         {
             List<FileClass> FileList = new List<FileClass>();
-
             FileClass files = new FileClass();
             String[] folderFiles = files.FolderPath();
             String[] textFiles = files.FilePath();
@@ -36,20 +30,5 @@ namespace ListViewHandIn.ViewModel
 
             return FileList;
         }
-
-        public static List<String> convertListToString()
-        {
-            List<String> convertedList = new List<String>();
-
-            foreach (var item in LoadList())
-            {
-                convertedList.Add(item.FileName.ToString());
-            }
-
-            return convertedList;
-        }
-        
-
-
     }
 }

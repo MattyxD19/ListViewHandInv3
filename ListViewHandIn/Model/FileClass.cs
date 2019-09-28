@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ListViewHandIn.Model
 {
@@ -22,30 +19,37 @@ namespace ListViewHandIn.Model
             }
         }
 
-        public String[] FolderPath()
+        private string filePathImage;
+
+        public string FilePathImage
+        {
+            get { return filePathImage; }
+            set
+            {
+                if (filePathImage != value)
+                {
+                    filePathImage = value;
+                }
+            }
+        }
+
+        public String UseablePath()
         {
             String path = "C:/Users/Mathias/Desktop/test";
-            //String[] folderDir = new Directory.GetFiles(path).GetFiles().Select(o => o.Name).ToArray();
-            //string[] dir = new Directory.GetFiles(path).Select(File => Path.GetFileName(File)).toArray();
+            return path;
+        }
 
-            string[] folder = Directory.GetDirectories(path).Select(file => Path.GetFileName(file)).ToArray();
-
-
+        public String[] FolderPath()
+        {
+            
+            string[] folder = Directory.GetDirectories(UseablePath()).Select(file => Path.GetFileName(file)).ToArray();
             return folder;
         }
 
         public String[] FilePath()
         {
-            String path = "C:/Users/Mathias/Desktop/test";
-            //String[] folderDir = new Directory.GetFiles(path).GetFiles().Select(o => o.Name).ToArray();
-            //string[] dir = new Directory.GetFiles(path).Select(File => Path.GetFileName(File)).toArray();
-
-            string[] files = Directory.GetFiles(path).Select(file => Path.GetFileName(file)).ToArray();
-
-
+            string[] files = Directory.GetFiles(UseablePath()).Select(file => Path.GetFileName(file)).ToArray();
             return files;
-
-
         }
     }
 }

@@ -10,5 +10,8 @@
     <Grid>
         <lib:ListViewControl HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"></lib:ListViewControl>
         <lib:ListBoxImages HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"></lib:ListBoxImages>
+
+        <Label Content="Folder browser"></Label>
+        <Label Content="Image view" HorizontalAlignment="Right" Margin="0,0,290,0"></Label>
     </Grid>
 </Window>
