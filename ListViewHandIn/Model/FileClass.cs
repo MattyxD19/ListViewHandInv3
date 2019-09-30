@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -39,17 +40,24 @@ namespace ListViewHandIn.Model
             return path;
         }
 
-        public String[] FolderPath()
+        public List<String> FilePath()
         {
-            
-            string[] folder = Directory.GetDirectories(UseablePath()).Select(file => Path.GetFileName(file)).ToArray();
-            return folder;
-        }
+            List<String> BuildFilesCollection = new List<String>();
+            string[] files = Directory.GetFiles(UseablePath());
+            string[] folders = Directory.GetDirectories(UseablePath());
 
-        public String[] FilePath()
-        {
-            string[] files = Directory.GetFiles(UseablePath()).Select(file => Path.GetFileName(file)).ToArray();
-            return files;
+            foreach (string file in files)
+            {
+                BuildFilesCollection.Add(file);
+
+            }
+
+            foreach (string dir in folders)
+            {
+                BuildFilesCollection.Add(dir);
+            }
+
+            return BuildFilesCollection;
         }
     }
 }

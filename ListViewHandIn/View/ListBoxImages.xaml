@@ -4,19 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ListViewHandIn.View"
-             mc:Ignorable="d" d:DesignWidth="350" Height="350">
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="350">
 
-
-
-    <Grid>
-        <StackPanel>
-            <ItemsControl ItemsSource="{Binding Path=FileList}" >
-                <ListBox x:Name="ShowImage" Height="350" Width="350">
-                    <DataTemplate >
-                        <Image Source="{Binding FilePathImage}"></Image>
-                    </DataTemplate>
-                </ListBox>
-            </ItemsControl>
-        </StackPanel>
-    </Grid>
+    <ListBox x:Name="ShowImage" Width="350" Height="350">
+        <ListBox.ItemTemplate>
+            <DataTemplate DataType="{x:Type Image}">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="{Binding populateListBox}" Width="200" Height="200" Visibility="Visible" Margin="10"></Image>
+                </StackPanel>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
 </UserControl>

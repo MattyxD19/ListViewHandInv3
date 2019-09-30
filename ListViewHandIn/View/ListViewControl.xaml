@@ -7,14 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="350">
     <Grid>
-        <StackPanel>
-            <ItemsControl ItemsSource="{Binding Path=FileList}" >
-                <ListView x:Name="ShowList" Height="350" Width="350">
-                    <DataTemplate >
-                        <TextBlock Text="{Binding Path=FileName}"></TextBlock>
-                    </DataTemplate>
-                </ListView>
-            </ItemsControl>
-        </StackPanel>
+        <ListView x:Name="ShowList" Width="350" Height="350">
+            <TextBlock Text="{Binding Path= FileName}"></TextBlock>
+        </ListView>
     </Grid>
 </UserControl>

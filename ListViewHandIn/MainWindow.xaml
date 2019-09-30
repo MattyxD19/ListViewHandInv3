@@ -8,10 +8,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <lib:ListViewControl HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"></lib:ListViewControl>
-        <lib:ListBoxImages HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"></lib:ListBoxImages>
-
-        <Label Content="Folder browser"></Label>
-        <Label Content="Image view" HorizontalAlignment="Right" Margin="0,0,290,0"></Label>
+        <lib:ListViewControl HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Focusable="True"></lib:ListViewControl>
+        <lib:ListBoxImages HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10" Focusable="True"></lib:ListBoxImages>
+        <Label Content="Folder browser" Margin="10,0,-10,385"/>
+        <Label Content="Image view" HorizontalAlignment="Right" Margin="0,0,290,385"></Label>
     </Grid>
 </Window>
