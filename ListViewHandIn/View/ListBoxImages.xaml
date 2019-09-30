@@ -11,7 +11,7 @@
         <ListBox.ItemTemplate>
             <DataTemplate DataType="{x:Type Image}">
                 <StackPanel Orientation="Vertical">
-                    <Image Source="{Binding populateListBox}" Width="200" Height="200" Visibility="Visible" Margin="10"></Image>
+                    <Image Source="{Binding FileName}" Width="200" Height="200" Visibility="Visible" Margin="10"></Image>
                 </StackPanel>
             </DataTemplate>
         </ListBox.ItemTemplate>

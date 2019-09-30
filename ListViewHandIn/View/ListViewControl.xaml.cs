@@ -24,6 +24,12 @@ namespace ListViewHandIn.View
         public ListViewControl()
         {
             InitializeComponent();
+
+            /**
+             *Reads the LoadList and adds the items
+             *to the List View (ShowList)
+             */ 
+
             ShowList.Items.Clear();
             foreach (var item in FileView.LoadList())
             {
