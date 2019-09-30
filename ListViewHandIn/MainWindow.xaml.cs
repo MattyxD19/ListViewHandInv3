@@ -54,11 +54,12 @@ namespace ListViewHandIn
                     textList.Add(new ShowText() { MyText = file });
 
                 }
-
+                /*
                 foreach (string dir in dirs)
                 {
                     textList.Add(new ShowText() { MyText = dir });
                 }
+                */
 
 
                 //Handel the Image files 
@@ -67,11 +68,12 @@ namespace ListViewHandIn
                     imageList.Add(new ShowImages() { MyImage = file });
 
                 }
-
+                /*
                 foreach (string dir in dirs)
                 {
                     imageList.Add(new ShowImages() { MyImage = dir });
                 }
+                */
             }
 
 
